@@ -24,7 +24,7 @@ struct RootView: View {
                 WorkoutsView(
                     viewModel:
                         WorkoutsViewModel(
-                            service: .happyPath,
+                            service: .live,
                             selectWorkout: selectWorkout
                         )
                 )

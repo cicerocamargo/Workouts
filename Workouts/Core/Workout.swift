@@ -1,6 +1,6 @@
 import Foundation
 
-struct Workout {
+struct Workout: Decodable {
     let title: String
     let duration: String
     let imageURL: URL?
