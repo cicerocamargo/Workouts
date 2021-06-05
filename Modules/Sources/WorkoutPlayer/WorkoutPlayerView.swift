@@ -1,9 +1,14 @@
+import Core
 import SwiftUI
 
-struct WorkoutPlayerView: View {
+public struct WorkoutPlayerView: View {
     let workout: Workout
 
-    var body: some View {
+    public init(workout: Workout) {
+        self.workout = workout
+    }
+
+    public var body: some View {
         VStack {
             Text("Workout Player").font(.largeTitle)
             Image(systemName: "play.circle.fill")

@@ -1,12 +1,16 @@
 import Combine
 import Foundation
 
-struct WorkoutsService {
-    let loadWorkouts: () -> AnyPublisher<[Workout], Error>
+public struct WorkoutsService {
+    public let loadWorkouts: () -> AnyPublisher<[Workout], Error>
+    
+    public init(loadWorkouts: @escaping () -> AnyPublisher<[Workout], Error>) {
+        self.loadWorkouts = loadWorkouts
+    }
 }
 
 #if DEBUG
-extension WorkoutsService {
+public extension WorkoutsService {
     static let happyPath = Self {
         Just([.sample, .sample, .sample])
             .setFailureType(to: Error.self)

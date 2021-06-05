@@ -4,7 +4,8 @@ import SwiftUI
 struct WorkoutsApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView()
+            Text("Hello")
+//            RootView()
         }
     }
 }

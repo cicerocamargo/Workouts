@@ -7,7 +7,13 @@ let package = Package(
     products: [
         .library(
             name: "Modules",
-            targets: ["Modules"]),
+            targets: [
+                "BrowseWorkouts",
+                "Paywall",
+                "Settings",
+                "WorkoutPlayer"
+            ]
+        )
     ],
     dependencies: [
         .package(
@@ -26,15 +32,31 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Modules",
+            name: "Core",
+            dependencies: []
+        ),
+        .target(
+            name: "BrowseWorkouts",
+            dependencies: ["Core", "Moya", "Kingfisher"]
+        ),
+        .target(
+            name: "Paywall",
             dependencies: [
-                "Moya",
-                "Kingfisher",
+                "Core",
                 .product(name: "FirebaseAnalytics", package: "Firebase")
             ]
         ),
+        .target(
+            name: "Settings",
+            dependencies: ["Core"]
+        ),
+        .target(
+            name: "WorkoutPlayer",
+            dependencies: ["Core"]
+        ),
         .testTarget(
             name: "ModulesTests",
-            dependencies: ["Modules"]),
+            dependencies: ["BrowseWorkouts", "Paywall", "Settings", "WorkoutPlayer"]
+        ),
     ]
 )

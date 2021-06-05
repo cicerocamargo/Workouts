@@ -1,16 +1,14 @@
+import Core
 import SwiftUI
 
-final class SubscriptionManager {
-    var isSubscriber: Bool {
-        get { UserDefaults.standard.bool(forKey: "isSubscriber") }
-        set { UserDefaults.standard.set(newValue, forKey: "isSubscriber") }
-    }
-}
-
-struct SettingsView: View {
+public struct SettingsView: View {
     let subscriptionManager: SubscriptionManager
+    
+    public init(subscriptionManager: SubscriptionManager) {
+        self.subscriptionManager = subscriptionManager
+    }
 
-    var body: some View {
+    public var body: some View {
         List {
             Toggle(
                 "Assinante: ",

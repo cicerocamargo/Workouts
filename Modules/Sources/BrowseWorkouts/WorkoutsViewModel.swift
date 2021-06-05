@@ -1,14 +1,15 @@
+import Core
 import Combine
 import Foundation
 
-final class WorkoutsViewModel: ObservableObject {
+public final class WorkoutsViewModel: ObservableObject {
     @Published private(set) var state: WorkoutsViewState = .init()
     private var cancellables = Set<AnyCancellable>()
     private let service: WorkoutsService
 
     let selectWorkout: (Workout) -> Void
 
-    init(service: WorkoutsService, selectWorkout: @escaping (Workout) -> Void) {
+    public init(service: WorkoutsService, selectWorkout: @escaping (Workout) -> Void) {
         self.service = service
         self.selectWorkout = selectWorkout
     }

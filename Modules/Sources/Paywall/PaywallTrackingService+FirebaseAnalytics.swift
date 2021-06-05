@@ -1,7 +1,8 @@
+import Core
 import FirebaseAnalytics
 import Foundation
 
-extension PaywallTrackingService {
+public extension PaywallTrackingService {
     static let firebaseAnalytics = PaywallTrackingService(
         trackView: { workout in
             Analytics.logEvent(

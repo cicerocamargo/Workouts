@@ -1,9 +1,14 @@
+import Core
 import SwiftUI
 
-struct WorkoutsView: View {
-    @StateObject var viewModel: WorkoutsViewModel
+public struct WorkoutsView: View {
+    @ObservedObject var viewModel: WorkoutsViewModel
 
-    var body: some View {
+    public init(viewModel: WorkoutsViewModel) {
+        self.viewModel = viewModel
+    }
+
+    public var body: some View {
         List {
             if viewModel.state.isLoading {
                 workoutsSection

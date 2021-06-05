@@ -1,3 +1,4 @@
+import Core
 import SwiftUI
 
 struct RootView: View {
@@ -83,10 +84,6 @@ extension RootView {
             )
         }
     }
-}
-
-extension Workout: Identifiable {
-    var id: String { title }
 }
 
 #if DEBUG

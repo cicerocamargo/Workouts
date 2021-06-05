@@ -1,13 +1,14 @@
+import Core
 import Combine
 import Foundation
 
-final class PaywallViewModel: ObservableObject {
+public final class PaywallViewModel: ObservableObject {
     private let sourceWorkout: Workout
     private let trackingService: PaywallTrackingService
     private let subscriptionManager: SubscriptionManager
     private let didFinishPurchase: (Workout) -> Void
 
-    init(
+    public init(
         sourceWorkout: Workout,
         trackingService: PaywallTrackingService,
         subscriptionManager: SubscriptionManager,

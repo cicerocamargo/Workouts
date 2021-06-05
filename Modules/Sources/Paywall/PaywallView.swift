@@ -1,9 +1,13 @@
 import SwiftUI
 
-struct PaywallView: View {
+public struct PaywallView: View {
+    public init(viewModel: PaywallViewModel) {
+        self.viewModel = viewModel
+    }
+
     @ObservedObject var viewModel: PaywallViewModel
 
-    var body: some View {
+    public var body: some View {
         VStack {
             Text("Assine já!").font(.largeTitle)
             Group {

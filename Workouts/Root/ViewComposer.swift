@@ -1,3 +1,8 @@
+import Core
+import WorkoutPlayer
+import BrowseWorkouts
+import Settings
+import Paywall
 import Foundation
 import SwiftUI
 

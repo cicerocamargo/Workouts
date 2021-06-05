@@ -1,8 +1,9 @@
+import Core
 import Combine
 import Foundation
 import Moya
 
-extension WorkoutsService {
+public extension WorkoutsService {
     static let live = Self {
         Future { promise in
             let provider = MoyaProvider<GetWorkouts>()
