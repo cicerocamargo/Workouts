@@ -17,12 +17,22 @@ let package = Package(
         .package(
             url: "https://github.com/onevcat/Kingfisher.git",
             .upToNextMajor(from: "6.1.1")
+        ),
+        .package(
+            name: "Firebase",
+            url: "https://github.com/firebase/firebase-ios-sdk.git",
+            .upToNextMajor(from: "8.1.0")
         )
     ],
     targets: [
         .target(
             name: "Modules",
-            dependencies: ["Moya", "Kingfisher"]),
+            dependencies: [
+                "Moya",
+                "Kingfisher",
+                .product(name: "FirebaseAuth", package: "Firebase")
+            ]
+        ),
         .testTarget(
             name: "ModulesTests",
             dependencies: ["Modules"]),

@@ -21,11 +21,10 @@ struct RootView: View {
 
     private var workoutsTab: some View {
         NavigationView {
-            WorkoutsView(
-                viewModel: WorkoutsViewModel(
-                    service: .live,
-                    selectWorkout: selectWorkout
-                )
+            ViewComposer.composeWorkoutsView(
+                selectWorkout: { workout in
+                    modal = isSubscriber ? .player(workout) : .paywall(workout)
+                }
             )
         }
         .tabItem {
@@ -42,10 +41,6 @@ struct RootView: View {
             Text("Configurações")
             Image(systemName: "gear")
         }
-    }
-
-    private func selectWorkout(workout: Workout) {
-        modal = isSubscriber ? .player(workout) : .paywall(workout)
     }
 }
 
@@ -71,20 +66,19 @@ extension RootView {
         switch modal {
         case .paywall(let workout):
             return AnyView(
-                PaywallView(
-                    viewModel: .init(
-                        sourceWorkout: workout,
-                        trackingService: DummyPaywallTrackingService(),
-                        didFinishPurchase: {
-                            self.modal = nil
-                            nextModal = .player($0)
-                        }
-                    )
+                ViewComposer.composePaywallView(
+                    workout: workout,
+                    didFinishPurchase: {
+                        self.modal = nil
+                        nextModal = .player($0)
+                    }
                 )
             )
 
         case .player(let workout):
-            return AnyView(WorkoutPlayerView(workout: workout))
+            return AnyView(
+                ViewComposer.composeWorkoutPlayerView(workout: workout)
+            )
         }
     }
 }
