@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		61B23C1B266BEFF600C00F23 /* PaywallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C1A266BEFF600C00F23 /* PaywallViewModel.swift */; };
 		61B23C1D266BF17A00C00F23 /* PaywallTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C1C266BF17A00C00F23 /* PaywallTrackingService.swift */; };
-		61B23C22266BF91100C00F23 /* FirebasePaywallTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C21266BF91100C00F23 /* FirebasePaywallTrackingService.swift */; };
+		61B23C22266BF91100C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C21266BF91100C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift */; };
 		61B23C24266BF9E800C00F23 /* ViewComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C23266BF9E800C00F23 /* ViewComposer.swift */; };
 		61FC74D825E3CB70001E5B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FC74D725E3CB70001E5B6F /* Assets.xcassets */; };
 		61FC74DB25E3CB70001E5B6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FC74DA25E3CB70001E5B6F /* Preview Assets.xcassets */; };
@@ -31,7 +31,7 @@
 /* Begin PBXFileReference section */
 		61B23C1A266BEFF600C00F23 /* PaywallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallViewModel.swift; sourceTree = "<group>"; };
 		61B23C1C266BF17A00C00F23 /* PaywallTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallTrackingService.swift; sourceTree = "<group>"; };
-		61B23C21266BF91100C00F23 /* FirebasePaywallTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasePaywallTrackingService.swift; sourceTree = "<group>"; };
+		61B23C21266BF91100C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaywallTrackingService+FirebaseAnalytics.swift"; sourceTree = "<group>"; };
 		61B23C23266BF9E800C00F23 /* ViewComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComposer.swift; sourceTree = "<group>"; };
 		61FC74D025E3CB6E001E5B6F /* Workouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61FC74D725E3CB70001E5B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,7 +147,6 @@
 			children = (
 				61FC74EF25E3CB8D001E5B6F /* PaywallView.swift */,
 				61B23C1A266BEFF600C00F23 /* PaywallViewModel.swift */,
-				61B23C1C266BF17A00C00F23 /* PaywallTrackingService.swift */,
 			);
 			path = Paywall;
 			sourceTree = "<group>";
@@ -166,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				61FC74F425E3CB8D001E5B6F /* Workout.swift */,
+				61B23C1C266BF17A00C00F23 /* PaywallTrackingService.swift */,
 				61FC74F525E3CB8D001E5B6F /* WorkoutsService.swift */,
 			);
 			path = Core;
@@ -182,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				61FC750B25E3CCF6001E5B6F /* WorkoutsService+Live.swift */,
-				61B23C21266BF91100C00F23 /* FirebasePaywallTrackingService.swift */,
+				61B23C21266BF91100C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 				61FC74FA25E3CB8D001E5B6F /* WorkoutCard.swift in Sources */,
 				61B23C1B266BEFF600C00F23 /* PaywallViewModel.swift in Sources */,
 				61B23C1D266BF17A00C00F23 /* PaywallTrackingService.swift in Sources */,
-				61B23C22266BF91100C00F23 /* FirebasePaywallTrackingService.swift in Sources */,
+				61B23C22266BF91100C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift in Sources */,
 				61FC74FB25E3CB8D001E5B6F /* WorkoutPlayerView.swift in Sources */,
 				61FC74F625E3CB8D001E5B6F /* SettingsView.swift in Sources */,
 				61FC74F825E3CB8D001E5B6F /* WorkoutsView.swift in Sources */,

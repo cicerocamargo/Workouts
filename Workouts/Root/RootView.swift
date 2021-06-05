@@ -23,7 +23,9 @@ struct RootView: View {
         NavigationView {
             ViewComposer.composeWorkoutsView(
                 selectWorkout: { workout in
-                    modal = isSubscriber ? .player(workout) : .paywall(workout)
+                    modal = ViewComposer.subscriptionManager.isSubscriber
+                        ? .player(workout)
+                        : .paywall(workout)
                 }
             )
         }
@@ -35,7 +37,7 @@ struct RootView: View {
 
     private var settingsTab: some View {
         NavigationView {
-            SettingsView()
+            ViewComposer.composeSettingsView()
         }
         .tabItem {
             Text("Configurações")

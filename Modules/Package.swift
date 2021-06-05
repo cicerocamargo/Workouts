@@ -30,7 +30,7 @@ let package = Package(
             dependencies: [
                 "Moya",
                 "Kingfisher",
-                .product(name: "FirebaseAuth", package: "Firebase")
+                .product(name: "FirebaseAnalytics", package: "Firebase")
             ]
         ),
         .testTarget(

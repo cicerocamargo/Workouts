@@ -4,25 +4,28 @@ import Foundation
 final class PaywallViewModel: ObservableObject {
     private let sourceWorkout: Workout
     private let trackingService: PaywallTrackingService
+    private let subscriptionManager: SubscriptionManager
     private let didFinishPurchase: (Workout) -> Void
 
     init(
         sourceWorkout: Workout,
         trackingService: PaywallTrackingService,
+        subscriptionManager: SubscriptionManager,
         didFinishPurchase: @escaping (Workout) -> Void
     ) {
         self.sourceWorkout = sourceWorkout
         self.trackingService = trackingService
+        self.subscriptionManager = subscriptionManager
         self.didFinishPurchase = didFinishPurchase
     }
 
     func handleOnAppear() {
-        trackingService.trackPurchase(from: sourceWorkout)
+        trackingService.trackPurchase(sourceWorkout)
     }
 
     func buyButtonTapped() {
-        isSubscriber = true
-        trackingService.trackPurchase(from: sourceWorkout)
+        subscriptionManager.isSubscriber = true
+        trackingService.trackPurchase(sourceWorkout)
         didFinishPurchase(sourceWorkout)
     }
 }

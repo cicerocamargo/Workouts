@@ -2,6 +2,8 @@ import Foundation
 import SwiftUI
 
 enum ViewComposer {
+    static let subscriptionManager = SubscriptionManager()
+
     static func composeWorkoutsView(
         selectWorkout: @escaping (Workout) -> Void
     ) -> WorkoutsView {
@@ -20,7 +22,8 @@ enum ViewComposer {
         .init(
             viewModel: .init(
                 sourceWorkout: workout,
-                trackingService: FirebasePaywallTrackingService(),
+                trackingService: .firebaseAnalytics,
+                subscriptionManager: subscriptionManager,
                 didFinishPurchase: didFinishPurchase
             )
         )
@@ -30,5 +33,9 @@ enum ViewComposer {
         workout: Workout
     ) -> WorkoutPlayerView {
         .init(workout: workout)
+    }
+
+    static func composeSettingsView() -> SettingsView {
+        .init(subscriptionManager: subscriptionManager)
     }
 }

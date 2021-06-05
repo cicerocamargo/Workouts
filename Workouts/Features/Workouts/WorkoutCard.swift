@@ -13,7 +13,9 @@ struct WorkoutCard: View {
                     KFImage(workout.imageURL)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
+
                     Color.black.opacity(0.2)
+                    
                     HStack {
                         textOverlay
                         Spacer()

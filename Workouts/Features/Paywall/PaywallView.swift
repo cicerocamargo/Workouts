@@ -33,7 +33,8 @@ struct PaywallView_Previews: PreviewProvider {
         PaywallView(
             viewModel: .init(
                 sourceWorkout: .sample,
-                trackingService: DummyPaywallTrackingService(),
+                trackingService: .dummy,
+                subscriptionManager: .init(),
                 didFinishPurchase: { _ in }
             )
         )
