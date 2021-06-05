@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61B23C1B266BEFF600C00F23 /* PaywallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C1A266BEFF600C00F23 /* PaywallViewModel.swift */; };
+		61B23C1D266BF17A00C00F23 /* PaywallTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C1C266BF17A00C00F23 /* PaywallTrackingService.swift */; };
 		61FC74D825E3CB70001E5B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FC74D725E3CB70001E5B6F /* Assets.xcassets */; };
 		61FC74DB25E3CB70001E5B6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FC74DA25E3CB70001E5B6F /* Preview Assets.xcassets */; };
 		61FC74F625E3CB8D001E5B6F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74E625E3CB8D001E5B6F /* SettingsView.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61B23C1A266BEFF600C00F23 /* PaywallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallViewModel.swift; sourceTree = "<group>"; };
+		61B23C1C266BF17A00C00F23 /* PaywallTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallTrackingService.swift; sourceTree = "<group>"; };
 		61FC74D025E3CB6E001E5B6F /* Workouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61FC74D725E3CB70001E5B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61FC74DA25E3CB70001E5B6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				61FC74EF25E3CB8D001E5B6F /* PaywallView.swift */,
+				61B23C1A266BEFF600C00F23 /* PaywallViewModel.swift */,
+				61B23C1C266BF17A00C00F23 /* PaywallTrackingService.swift */,
 			);
 			path = Paywall;
 			sourceTree = "<group>";
@@ -221,6 +227,8 @@
 				Base,
 			);
 			mainGroup = 61FC74C725E3CB6E001E5B6F;
+			packageReferences = (
+			);
 			productRefGroup = 61FC74D125E3CB6E001E5B6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -255,6 +263,8 @@
 				61FC750025E3CB8D001E5B6F /* WorkoutsService.swift in Sources */,
 				61FC74F725E3CB8D001E5B6F /* WorkoutsViewState.swift in Sources */,
 				61FC74FA25E3CB8D001E5B6F /* WorkoutCard.swift in Sources */,
+				61B23C1B266BEFF600C00F23 /* PaywallViewModel.swift in Sources */,
+				61B23C1D266BF17A00C00F23 /* PaywallTrackingService.swift in Sources */,
 				61FC74FB25E3CB8D001E5B6F /* WorkoutPlayerView.swift in Sources */,
 				61FC74F625E3CB8D001E5B6F /* SettingsView.swift in Sources */,
 				61FC74F825E3CB8D001E5B6F /* WorkoutsView.swift in Sources */,

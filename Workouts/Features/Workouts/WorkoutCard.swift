@@ -1,19 +1,28 @@
 import Foundation
+import Kingfisher
 import SwiftUI
 
 struct WorkoutCard: View {
     let workout: Workout
 
     var body: some View {
-        ZStack(alignment: .bottom) {
-            Color(.systemGray5)
-
-            Color.black.opacity(0.2)
-            textOverlay.padding()
-        }
-        .frame(height: 200)
-        .cornerRadius(8.0)
-        .padding(.vertical)
+        Color(.systemGray5)
+            .frame(height: 200)
+            .overlay(
+                ZStack(alignment: .bottom) {
+                    KFImage(workout.imageURL)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                    Color.black.opacity(0.2)
+                    HStack {
+                        textOverlay
+                        Spacer()
+                    }
+                    .padding()
+                }
+            )
+            .cornerRadius(8.0)
+            .padding(.vertical)
     }
 
     private var textOverlay: some View {

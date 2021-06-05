@@ -29,7 +29,7 @@ struct WorkoutsView: View {
     }
 
     private var workoutsSection: some View {
-        Section(header: Text("Escolha seu treino e comece agora mesmo").bold()) {
+        Section(header: Text("Escolha seu treino e começe agora mesmo").bold()) {
             ForEach(viewModel.state.workouts) { workout in
                 Button(action: { viewModel.selectWorkout(workout) }) {
                     WorkoutCard(workout: workout)
