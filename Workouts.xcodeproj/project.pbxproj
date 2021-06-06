@@ -10,18 +10,23 @@
 		61B23C2D266C114000C00F23 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 61B23C2C266C114000C00F23 /* Modules */; };
 		61B23C2E266C11BA00C00F23 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74F125E3CB8D001E5B6F /* RootView.swift */; };
 		61B23C2F266C11BD00C00F23 /* ViewComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C23266BF9E800C00F23 /* ViewComposer.swift */; };
+		61B23C54266D1C5600C00F23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C50266D1C5600C00F23 /* SceneDelegate.swift */; };
+		61B23C55266D1C5600C00F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B23C51266D1C5600C00F23 /* LaunchScreen.storyboard */; };
+		61B23C57266D1C5600C00F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C53266D1C5600C00F23 /* AppDelegate.swift */; };
 		61FC74D825E3CB70001E5B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FC74D725E3CB70001E5B6F /* Assets.xcassets */; };
 		61FC74DB25E3CB70001E5B6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FC74DA25E3CB70001E5B6F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		61B23C23266BF9E800C00F23 /* ViewComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComposer.swift; sourceTree = "<group>"; };
+		61B23C50266D1C5600C00F23 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		61B23C51266D1C5600C00F23 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61B23C52266D1C5600C00F23 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61B23C53266D1C5600C00F23 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61FC74D025E3CB6E001E5B6F /* Workouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61FC74D725E3CB70001E5B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61FC74DA25E3CB70001E5B6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		61FC74DC25E3CB70001E5B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61FC74F125E3CB8D001E5B6F /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		61FC74F225E3CB8D001E5B6F /* WorkoutsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsApp.swift; sourceTree = "<group>"; };
 		61FC750225E3CC0E001E5B6F /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +66,7 @@
 				61FC750825E3CCE0001E5B6F /* Services */,
 				61FC74F025E3CB8D001E5B6F /* Root */,
 				61FC74D725E3CB70001E5B6F /* Assets.xcassets */,
-				61FC74DC25E3CB70001E5B6F /* Info.plist */,
+				61B23C52266D1C5600C00F23 /* Info.plist */,
 				61FC74D925E3CB70001E5B6F /* Preview Content */,
 			);
 			path = Workouts;
@@ -78,8 +83,10 @@
 		61FC74F025E3CB8D001E5B6F /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				61B23C53266D1C5600C00F23 /* AppDelegate.swift */,
+				61B23C51266D1C5600C00F23 /* LaunchScreen.storyboard */,
+				61B23C50266D1C5600C00F23 /* SceneDelegate.swift */,
 				61FC74F125E3CB8D001E5B6F /* RootView.swift */,
-				61FC74F225E3CB8D001E5B6F /* WorkoutsApp.swift */,
 				61B23C23266BF9E800C00F23 /* ViewComposer.swift */,
 			);
 			path = Root;
@@ -161,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B23C55266D1C5600C00F23 /* LaunchScreen.storyboard in Resources */,
 				61FC74DB25E3CB70001E5B6F /* Preview Assets.xcassets in Resources */,
 				61FC74D825E3CB70001E5B6F /* Assets.xcassets in Resources */,
 			);
@@ -173,8 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B23C57266D1C5600C00F23 /* AppDelegate.swift in Sources */,
 				61B23C2F266C11BD00C00F23 /* ViewComposer.swift in Sources */,
 				61B23C2E266C11BA00C00F23 /* RootView.swift in Sources */,
+				61B23C54266D1C5600C00F23 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
