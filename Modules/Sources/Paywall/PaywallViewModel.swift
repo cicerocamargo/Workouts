@@ -1,4 +1,4 @@
-import Core
+import CoreDomain
 import Combine
 import Foundation
 

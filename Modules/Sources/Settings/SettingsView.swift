@@ -1,4 +1,4 @@
-import Core
+import CoreDomain
 import SwiftUI
 
 public struct SettingsView: View {

@@ -13,50 +13,38 @@ let package = Package(
                 "Settings",
                 "WorkoutPlayer"
             ]
-        )
-    ],
-    dependencies: [
-        .package(
-            url: "https://github.com/Moya/Moya.git",
-            .upToNextMajor(from: "14.0.0")
         ),
-        .package(
-            url: "https://github.com/onevcat/Kingfisher.git",
-            .upToNextMajor(from: "6.1.1")
-        ),
-        .package(
-            name: "Firebase",
-            url: "https://github.com/firebase/firebase-ios-sdk.git",
-            .upToNextMajor(from: "8.1.0")
-        )
     ],
+    dependencies: [],
     targets: [
         .target(
-            name: "Core",
+            name: "CoreDomain",
+            dependencies: []
+        ),
+        .target(
+            name: "CoreUI",
             dependencies: []
         ),
         .target(
             name: "BrowseWorkouts",
-            dependencies: ["Core", "Moya", "Kingfisher"]
+            dependencies: ["CoreDomain", "CoreUI"]
         ),
         .target(
             name: "Paywall",
-            dependencies: [
-                "Core",
-                .product(name: "FirebaseAnalytics", package: "Firebase")
-            ]
+            dependencies: ["CoreDomain"]
         ),
         .target(
             name: "Settings",
-            dependencies: ["Core"]
+            dependencies: ["CoreDomain"]
         ),
         .target(
             name: "WorkoutPlayer",
-            dependencies: ["Core"]
+            dependencies: ["CoreDomain"]
         ),
+
         .testTarget(
-            name: "ModulesTests",
-            dependencies: ["BrowseWorkouts", "Paywall", "Settings", "WorkoutPlayer"]
+            name: "BrowseWorkoutsTests",
+            dependencies: ["BrowseWorkouts"]
         ),
     ]
 )

@@ -1,6 +1,6 @@
-import Core
+import CoreDomain
+import CoreUI
 import Foundation
-import Kingfisher
 import SwiftUI
 
 struct WorkoutCard: View {
@@ -11,8 +11,7 @@ struct WorkoutCard: View {
             .frame(height: 200)
             .overlay(
                 ZStack(alignment: .bottom) {
-                    KFImage(workout.imageURL)
-                        .resizable()
+                    AsyncSwiftUIImage(workout.imageURL)
                         .aspectRatio(contentMode: .fill)
 
                     Color.black.opacity(0.2)

@@ -13,7 +13,7 @@ extension Workout: Identifiable {
 
 public extension Workout {
     static let sample = Self(
-        title: "GANHE MÚSCULO SEM USAR PESOS",
+        title: "Lorem ipsum dolor sit",
         duration: "12 semanas",
         imageURL: nil,
         isRecommended: true
