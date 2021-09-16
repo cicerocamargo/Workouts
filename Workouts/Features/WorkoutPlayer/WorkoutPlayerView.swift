@@ -1,14 +1,11 @@
-import CoreDomain
 import SwiftUI
 
-public struct WorkoutPlayerView: View {
+struct WorkoutPlayerView: View {
+    @Environment(\.presentationMode) var presentationMode
+
     let workout: Workout
 
-    public init(workout: Workout) {
-        self.workout = workout
-    }
-
-    public var body: some View {
+    var body: some View {
         VStack {
             Text("Workout Player").font(.largeTitle)
             Image(systemName: "play.circle.fill")
@@ -16,6 +13,11 @@ public struct WorkoutPlayerView: View {
                 .frame(width: 100, height: 100)
             Text("(To be developed)")
         }
+        .navigationBarItems(
+            trailing: Button("Close") {
+                presentationMode.wrappedValue.dismiss()
+            }
+        )
     }
 }
 

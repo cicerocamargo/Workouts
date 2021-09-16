@@ -1,20 +1,18 @@
-import CoreDomain
-import CoreUI
 import Foundation
+import Kingfisher
 import SwiftUI
 
 struct WorkoutCard: View {
     let workout: Workout
 
     var body: some View {
-        Color(.systemGray5)
+        Color(.systemGray2)
             .frame(height: 200)
             .overlay(
                 ZStack(alignment: .bottom) {
-                    AsyncSwiftUIImage(workout.imageURL)
+                    KFImage(workout.imageURL)
+                        .resizable()
                         .aspectRatio(contentMode: .fill)
-
-                    Color.black.opacity(0.2)
                     
                     HStack {
                         textOverlay
@@ -29,15 +27,16 @@ struct WorkoutCard: View {
 
     private var textOverlay: some View {
         VStack(alignment: .leading) {
-            Text(workout.title)
+            Text(workout.title.uppercased())
                 .font(.title2)
                 .bold()
                 .foregroundColor(.white)
             Text(workout.duration)
                 .font(.title3)
                 .foregroundColor(.white)
+
             if workout.isRecommended {
-                Text("Recomendado")
+                Text("Recommended")
                     .font(.caption)
                     .foregroundColor(.white)
                     .padding(4)
@@ -45,5 +44,5 @@ struct WorkoutCard: View {
                     .cornerRadius(3.0)
             }
         }
-    }
+    }		
 }
