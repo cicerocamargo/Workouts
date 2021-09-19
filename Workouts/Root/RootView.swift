@@ -1,13 +1,6 @@
-import BrowseWorkouts
-import Profile
-import Payment
-import WorkoutsCore
-import WorkoutPlayer
 import SwiftUI
 
 struct RootView: View {
-    let subscriptionManager: SubscriptionManager = .shared
-
     var body: some View {
         TabView {
             workoutsTab
@@ -16,56 +9,19 @@ struct RootView: View {
     }
 
     private var workoutsTab: some View {
-        NavigationView {
-            WorkoutsView(viewModel: .init(service: .live)) { workout in
-                WorkoutDetail(
-                    workout: workout,
-                    makePaywallView: { didFinishPurchase in
-                        PaywallView(
-                            viewModel: .init(
-                                sourceWorkout: nil,
-                                trackingService: FirebaseAnalyticsPaywallTrackingService(),
-                                subscriptionManager: subscriptionManager,
-                                didFinishPurchase: { _ in didFinishPurchase() }
-                            )
-                        )
-                    },
-                    makeWorkoutPlayerView: { workout in
-                        UINavigationController(
-                            rootViewController: WorkoutPlayerViewController(workout: workout)
-                        )
-                        .asSwiftUIView
-                        .edgesIgnoringSafeArea(.all)
-                    }
-                )
+        NavigationView(content: Composer.makeWorkoutsView)
+            .tabItem {
+                Text("Workouts")
+                Image(systemName: "bolt.heart")
             }
-        }
-        .tabItem {
-            Text("Workouts")
-            Image(systemName: "bolt.heart")
-        }
     }
 
     private var settingsTab: some View {
-        NavigationView {
-            ProfileView(
-                subscriptionManager: subscriptionManager,
-                makePaywallView: { didFinishPurchase in
-                    PaywallView(
-                        viewModel: .init(
-                            sourceWorkout: nil,
-                            trackingService: FirebaseAnalyticsPaywallTrackingService(),
-                            subscriptionManager: subscriptionManager,
-                            didFinishPurchase: { _ in didFinishPurchase() }
-                        )
-                    )
-                }
-            )
-        }
-        .tabItem {
-            Text("Profile")
-            Image(systemName: "person.circle")
-        }
+        NavigationView(content: Composer.makeProfileView)
+            .tabItem {
+                Text("Profile")
+                Image(systemName: "person.circle")
+            }
     }
 }
 

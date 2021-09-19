@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6106CB7B26F16F5400A041A5 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 6106CB7A26F16F5400A041A5 /* Moya */; };
 		6106CB8126F16FF100A041A5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6106CB8026F16FF100A041A5 /* FirebaseAnalytics */; };
+		610E472626F76FC900F51C38 /* Composer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E472526F76FC900F51C38 /* Composer.swift */; };
 		613349B226F7496F005C98F0 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 613349B126F7496F005C98F0 /* Modules */; };
 		613349B426F7556A005C98F0 /* PaywallTrackingService+FirebaseAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613349B326F7556A005C98F0 /* PaywallTrackingService+FirebaseAnalytics.swift */; };
 		61FC74D825E3CB70001E5B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FC74D725E3CB70001E5B6F /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		610E472526F76FC900F51C38 /* Composer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composer.swift; sourceTree = "<group>"; };
 		613349B026F74935005C98F0 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
 		613349B326F7556A005C98F0 /* PaywallTrackingService+FirebaseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaywallTrackingService+FirebaseAnalytics.swift"; sourceTree = "<group>"; };
 		61FC74D025E3CB6E001E5B6F /* Workouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 			children = (
 				61FC74F125E3CB8D001E5B6F /* RootView.swift */,
 				61FC74F225E3CB8D001E5B6F /* WorkoutsApp.swift */,
+				610E472526F76FC900F51C38 /* Composer.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610E472626F76FC900F51C38 /* Composer.swift in Sources */,
 				61FC750C25E3CCF6001E5B6F /* WorkoutsService+Live.swift in Sources */,
 				61FC74FD25E3CB8D001E5B6F /* RootView.swift in Sources */,
 				613349B426F7556A005C98F0 /* PaywallTrackingService+FirebaseAnalytics.swift in Sources */,
