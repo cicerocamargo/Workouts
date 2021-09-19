@@ -7,42 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61B23C2D266C114000C00F23 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 61B23C2C266C114000C00F23 /* Modules */; };
-		61B23C2E266C11BA00C00F23 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74F125E3CB8D001E5B6F /* RootView.swift */; };
-		61B23C2F266C11BD00C00F23 /* ViewComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C23266BF9E800C00F23 /* ViewComposer.swift */; };
-		61B23C54266D1C5600C00F23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C50266D1C5600C00F23 /* SceneDelegate.swift */; };
-		61B23C55266D1C5600C00F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B23C51266D1C5600C00F23 /* LaunchScreen.storyboard */; };
-		61B23C57266D1C5600C00F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C53266D1C5600C00F23 /* AppDelegate.swift */; };
-		61B23C5A266D1F5A00C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C58266D1F5A00C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift */; };
-		61B23C5B266D1F5A00C00F23 /* WorkoutsService+Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C59266D1F5A00C00F23 /* WorkoutsService+Live.swift */; };
-		61B23C5E266D200B00C00F23 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 61B23C5D266D200B00C00F23 /* Moya */; };
-		61B23C61266D202000C00F23 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 61B23C60266D202000C00F23 /* Kingfisher */; };
-		61B23C64266D204000C00F23 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 61B23C63266D204000C00F23 /* FirebaseAnalytics */; };
-		61B23C67266D332100C00F23 /* ViewComposer+Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C66266D332100C00F23 /* ViewComposer+Workouts.swift */; };
-		61B23C69266D336300C00F23 /* ViewComposer+Paywall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C68266D336300C00F23 /* ViewComposer+Paywall.swift */; };
-		61B23C6B266D33A500C00F23 /* ViewComposer+WorkoutPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C6A266D33A500C00F23 /* ViewComposer+WorkoutPlayer.swift */; };
-		61B23C6E266D33D700C00F23 /* ViewComposer+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C6D266D33D700C00F23 /* ViewComposer+Settings.swift */; };
+		6106CB7826F167FA00A041A5 /* WorkoutDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6106CB7726F167FA00A041A5 /* WorkoutDetail.swift */; };
+		6106CB7B26F16F5400A041A5 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 6106CB7A26F16F5400A041A5 /* Moya */; };
+		6106CB7E26F16F8200A041A5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6106CB7D26F16F8200A041A5 /* Kingfisher */; };
+		6106CB8126F16FF100A041A5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6106CB8026F16FF100A041A5 /* FirebaseAnalytics */; };
+		613349AF26F73C00005C98F0 /* UIViewController+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613349AE26F73C00005C98F0 /* UIViewController+SwiftUI.swift */; };
+		614E00A626F2C0A5005C4833 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E00A526F2C0A5005C4833 /* SubscriptionManager.swift */; };
+		61B23C1B266BEFF600C00F23 /* PaywallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C1A266BEFF600C00F23 /* PaywallViewModel.swift */; };
+		61B23C1D266BF17A00C00F23 /* PaywallTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C1C266BF17A00C00F23 /* PaywallTrackingService.swift */; };
+		61B23C22266BF91100C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C21266BF91100C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift */; };
 		61FC74D825E3CB70001E5B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FC74D725E3CB70001E5B6F /* Assets.xcassets */; };
 		61FC74DB25E3CB70001E5B6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FC74DA25E3CB70001E5B6F /* Preview Assets.xcassets */; };
+		61FC74F625E3CB8D001E5B6F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74E625E3CB8D001E5B6F /* ProfileView.swift */; };
+		61FC74F825E3CB8D001E5B6F /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74E925E3CB8D001E5B6F /* WorkoutsView.swift */; };
+		61FC74F925E3CB8D001E5B6F /* WorkoutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74EA25E3CB8D001E5B6F /* WorkoutsViewModel.swift */; };
+		61FC74FA25E3CB8D001E5B6F /* WorkoutCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74EB25E3CB8D001E5B6F /* WorkoutCard.swift */; };
+		61FC74FB25E3CB8D001E5B6F /* WorkoutPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74ED25E3CB8D001E5B6F /* WorkoutPlayerViewController.swift */; };
+		61FC74FC25E3CB8D001E5B6F /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74EF25E3CB8D001E5B6F /* PaywallView.swift */; };
+		61FC74FD25E3CB8D001E5B6F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74F125E3CB8D001E5B6F /* RootView.swift */; };
+		61FC74FE25E3CB8D001E5B6F /* WorkoutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74F225E3CB8D001E5B6F /* WorkoutsApp.swift */; };
+		61FC74FF25E3CB8D001E5B6F /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74F425E3CB8D001E5B6F /* Workout.swift */; };
+		61FC750025E3CB8D001E5B6F /* WorkoutsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74F525E3CB8D001E5B6F /* WorkoutsService.swift */; };
+		61FC750C25E3CCF6001E5B6F /* WorkoutsService+Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC750B25E3CCF6001E5B6F /* WorkoutsService+Live.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		61B23C23266BF9E800C00F23 /* ViewComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComposer.swift; sourceTree = "<group>"; };
-		61B23C50266D1C5600C00F23 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		61B23C51266D1C5600C00F23 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		61B23C52266D1C5600C00F23 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61B23C53266D1C5600C00F23 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		61B23C58266D1F5A00C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaywallTrackingService+FirebaseAnalytics.swift"; sourceTree = "<group>"; };
-		61B23C59266D1F5A00C00F23 /* WorkoutsService+Live.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WorkoutsService+Live.swift"; sourceTree = "<group>"; };
-		61B23C66266D332100C00F23 /* ViewComposer+Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewComposer+Workouts.swift"; sourceTree = "<group>"; };
-		61B23C68266D336300C00F23 /* ViewComposer+Paywall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewComposer+Paywall.swift"; sourceTree = "<group>"; };
-		61B23C6A266D33A500C00F23 /* ViewComposer+WorkoutPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewComposer+WorkoutPlayer.swift"; sourceTree = "<group>"; };
-		61B23C6D266D33D700C00F23 /* ViewComposer+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewComposer+Settings.swift"; sourceTree = "<group>"; };
+		6106CB7726F167FA00A041A5 /* WorkoutDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetail.swift; sourceTree = "<group>"; };
+		613349AE26F73C00005C98F0 /* UIViewController+SwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SwiftUI.swift"; sourceTree = "<group>"; };
+		614E00A526F2C0A5005C4833 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		61B23C1A266BEFF600C00F23 /* PaywallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallViewModel.swift; sourceTree = "<group>"; };
+		61B23C1C266BF17A00C00F23 /* PaywallTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallTrackingService.swift; sourceTree = "<group>"; };
+		61B23C21266BF91100C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaywallTrackingService+FirebaseAnalytics.swift"; sourceTree = "<group>"; };
 		61FC74D025E3CB6E001E5B6F /* Workouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61FC74D725E3CB70001E5B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61FC74DA25E3CB70001E5B6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		61FC74DC25E3CB70001E5B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61FC74E625E3CB8D001E5B6F /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		61FC74E925E3CB8D001E5B6F /* WorkoutsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
+		61FC74EA25E3CB8D001E5B6F /* WorkoutsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsViewModel.swift; sourceTree = "<group>"; };
+		61FC74EB25E3CB8D001E5B6F /* WorkoutCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutCard.swift; sourceTree = "<group>"; };
+		61FC74ED25E3CB8D001E5B6F /* WorkoutPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutPlayerViewController.swift; sourceTree = "<group>"; };
+		61FC74EF25E3CB8D001E5B6F /* PaywallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		61FC74F125E3CB8D001E5B6F /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		61FC750225E3CC0E001E5B6F /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
+		61FC74F225E3CB8D001E5B6F /* WorkoutsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsApp.swift; sourceTree = "<group>"; };
+		61FC74F425E3CB8D001E5B6F /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		61FC74F525E3CB8D001E5B6F /* WorkoutsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsService.swift; sourceTree = "<group>"; };
+		61FC750B25E3CCF6001E5B6F /* WorkoutsService+Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutsService+Live.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,32 +60,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61B23C61266D202000C00F23 /* Kingfisher in Frameworks */,
-				61B23C5E266D200B00C00F23 /* Moya in Frameworks */,
-				61B23C64266D204000C00F23 /* FirebaseAnalytics in Frameworks */,
-				61B23C2D266C114000C00F23 /* Modules in Frameworks */,
+				6106CB7E26F16F8200A041A5 /* Kingfisher in Frameworks */,
+				6106CB7B26F16F5400A041A5 /* Moya in Frameworks */,
+				6106CB8126F16FF100A041A5 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		61B23C65266D32FF00C00F23 /* ViewComposer */ = {
+		613349AD26F73BEE005C98F0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				61B23C23266BF9E800C00F23 /* ViewComposer.swift */,
-				61B23C66266D332100C00F23 /* ViewComposer+Workouts.swift */,
-				61B23C68266D336300C00F23 /* ViewComposer+Paywall.swift */,
-				61B23C6A266D33A500C00F23 /* ViewComposer+WorkoutPlayer.swift */,
-				61B23C6D266D33D700C00F23 /* ViewComposer+Settings.swift */,
+				613349AE26F73C00005C98F0 /* UIViewController+SwiftUI.swift */,
 			);
-			path = ViewComposer;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		61FC74C725E3CB6E001E5B6F = {
 			isa = PBXGroup;
 			children = (
-				61FC750225E3CC0E001E5B6F /* Modules */,
 				61FC74D225E3CB6E001E5B6F /* Workouts */,
 				61FC74D125E3CB6E001E5B6F /* Products */,
 				61FC750425E3CC31001E5B6F /* Frameworks */,
@@ -93,11 +97,12 @@
 		61FC74D225E3CB6E001E5B6F /* Workouts */ = {
 			isa = PBXGroup;
 			children = (
-				61B23C65266D32FF00C00F23 /* ViewComposer */,
-				61FC750825E3CCE0001E5B6F /* Services */,
+				613349AD26F73BEE005C98F0 /* Extensions */,
+				61FC74F325E3CB8D001E5B6F /* Core */,
+				61FC74E425E3CB8D001E5B6F /* Features */,
 				61FC74F025E3CB8D001E5B6F /* Root */,
 				61FC74D725E3CB70001E5B6F /* Assets.xcassets */,
-				61B23C52266D1C5600C00F23 /* Info.plist */,
+				61FC74DC25E3CB70001E5B6F /* Info.plist */,
 				61FC74D925E3CB70001E5B6F /* Preview Content */,
 			);
 			path = Workouts;
@@ -111,15 +116,73 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		61FC74E425E3CB8D001E5B6F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				61FC74E525E3CB8D001E5B6F /* Profile */,
+				61FC74E725E3CB8D001E5B6F /* Workouts */,
+				61FC74EC25E3CB8D001E5B6F /* WorkoutPlayer */,
+				61FC74EE25E3CB8D001E5B6F /* Paywall */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		61FC74E525E3CB8D001E5B6F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				61FC74E625E3CB8D001E5B6F /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		61FC74E725E3CB8D001E5B6F /* Workouts */ = {
+			isa = PBXGroup;
+			children = (
+				61FC74F525E3CB8D001E5B6F /* WorkoutsService.swift */,
+				61FC750B25E3CCF6001E5B6F /* WorkoutsService+Live.swift */,
+				61FC74E925E3CB8D001E5B6F /* WorkoutsView.swift */,
+				61FC74EA25E3CB8D001E5B6F /* WorkoutsViewModel.swift */,
+				61FC74EB25E3CB8D001E5B6F /* WorkoutCard.swift */,
+				6106CB7726F167FA00A041A5 /* WorkoutDetail.swift */,
+			);
+			path = Workouts;
+			sourceTree = "<group>";
+		};
+		61FC74EC25E3CB8D001E5B6F /* WorkoutPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				61FC74ED25E3CB8D001E5B6F /* WorkoutPlayerViewController.swift */,
+			);
+			path = WorkoutPlayer;
+			sourceTree = "<group>";
+		};
+		61FC74EE25E3CB8D001E5B6F /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				61B23C21266BF91100C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift */,
+				61B23C1C266BF17A00C00F23 /* PaywallTrackingService.swift */,
+				61FC74EF25E3CB8D001E5B6F /* PaywallView.swift */,
+				61B23C1A266BEFF600C00F23 /* PaywallViewModel.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
 		61FC74F025E3CB8D001E5B6F /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				61B23C53266D1C5600C00F23 /* AppDelegate.swift */,
-				61B23C51266D1C5600C00F23 /* LaunchScreen.storyboard */,
-				61B23C50266D1C5600C00F23 /* SceneDelegate.swift */,
 				61FC74F125E3CB8D001E5B6F /* RootView.swift */,
+				61FC74F225E3CB8D001E5B6F /* WorkoutsApp.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		61FC74F325E3CB8D001E5B6F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				61FC74F425E3CB8D001E5B6F /* Workout.swift */,
+				614E00A526F2C0A5005C4833 /* SubscriptionManager.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		61FC750425E3CC31001E5B6F /* Frameworks */ = {
@@ -127,15 +190,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		61FC750825E3CCE0001E5B6F /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				61B23C59266D1F5A00C00F23 /* WorkoutsService+Live.swift */,
-				61B23C58266D1F5A00C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,10 +209,9 @@
 			);
 			name = Workouts;
 			packageProductDependencies = (
-				61B23C2C266C114000C00F23 /* Modules */,
-				61B23C5D266D200B00C00F23 /* Moya */,
-				61B23C60266D202000C00F23 /* Kingfisher */,
-				61B23C63266D204000C00F23 /* FirebaseAnalytics */,
+				6106CB7A26F16F5400A041A5 /* Moya */,
+				6106CB7D26F16F8200A041A5 /* Kingfisher */,
+				6106CB8026F16FF100A041A5 /* FirebaseAnalytics */,
 			);
 			productName = Workouts;
 			productReference = 61FC74D025E3CB6E001E5B6F /* Workouts.app */;
@@ -188,9 +241,9 @@
 			);
 			mainGroup = 61FC74C725E3CB6E001E5B6F;
 			packageReferences = (
-				61B23C5C266D200B00C00F23 /* XCRemoteSwiftPackageReference "Moya" */,
-				61B23C5F266D202000C00F23 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				61B23C62266D204000C00F23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				6106CB7926F16F5400A041A5 /* XCRemoteSwiftPackageReference "Moya" */,
+				6106CB7C26F16F8200A041A5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				6106CB7F26F16FF100A041A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 61FC74D125E3CB6E001E5B6F /* Products */;
 			projectDirPath = "";
@@ -206,7 +259,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61B23C55266D1C5600C00F23 /* LaunchScreen.storyboard in Resources */,
 				61FC74DB25E3CB70001E5B6F /* Preview Assets.xcassets in Resources */,
 				61FC74D825E3CB70001E5B6F /* Assets.xcassets in Resources */,
 			);
@@ -219,16 +271,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61B23C57266D1C5600C00F23 /* AppDelegate.swift in Sources */,
-				61B23C5B266D1F5A00C00F23 /* WorkoutsService+Live.swift in Sources */,
-				61B23C2F266C11BD00C00F23 /* ViewComposer.swift in Sources */,
-				61B23C67266D332100C00F23 /* ViewComposer+Workouts.swift in Sources */,
-				61B23C2E266C11BA00C00F23 /* RootView.swift in Sources */,
-				61B23C69266D336300C00F23 /* ViewComposer+Paywall.swift in Sources */,
-				61B23C5A266D1F5A00C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift in Sources */,
-				61B23C54266D1C5600C00F23 /* SceneDelegate.swift in Sources */,
-				61B23C6B266D33A500C00F23 /* ViewComposer+WorkoutPlayer.swift in Sources */,
-				61B23C6E266D33D700C00F23 /* ViewComposer+Settings.swift in Sources */,
+				61FC750C25E3CCF6001E5B6F /* WorkoutsService+Live.swift in Sources */,
+				61FC74FD25E3CB8D001E5B6F /* RootView.swift in Sources */,
+				61FC74FC25E3CB8D001E5B6F /* PaywallView.swift in Sources */,
+				61FC74F925E3CB8D001E5B6F /* WorkoutsViewModel.swift in Sources */,
+				61FC74FF25E3CB8D001E5B6F /* Workout.swift in Sources */,
+				613349AF26F73C00005C98F0 /* UIViewController+SwiftUI.swift in Sources */,
+				61FC750025E3CB8D001E5B6F /* WorkoutsService.swift in Sources */,
+				61FC74FA25E3CB8D001E5B6F /* WorkoutCard.swift in Sources */,
+				61B23C1B266BEFF600C00F23 /* PaywallViewModel.swift in Sources */,
+				61B23C1D266BF17A00C00F23 /* PaywallTrackingService.swift in Sources */,
+				61B23C22266BF91100C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift in Sources */,
+				61FC74FB25E3CB8D001E5B6F /* WorkoutPlayerViewController.swift in Sources */,
+				614E00A626F2C0A5005C4833 /* SubscriptionManager.swift in Sources */,
+				6106CB7826F167FA00A041A5 /* WorkoutDetail.swift in Sources */,
+				61FC74F625E3CB8D001E5B6F /* ProfileView.swift in Sources */,
+				61FC74F825E3CB8D001E5B6F /* WorkoutsView.swift in Sources */,
+				61FC74FE25E3CB8D001E5B6F /* WorkoutsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,50 +478,46 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		61B23C5C266D200B00C00F23 /* XCRemoteSwiftPackageReference "Moya" */ = {
+		6106CB7926F16F5400A041A5 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 14.0.1;
+				minimumVersion = 15.0.0;
 			};
 		};
-		61B23C5F266D202000C00F23 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		6106CB7C26F16F8200A041A5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.3.0;
+				minimumVersion = 6.3.1;
 			};
 		};
-		61B23C62266D204000C00F23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		6106CB7F26F16FF100A041A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 8.1.0;
+				minimumVersion = 8.7.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		61B23C2C266C114000C00F23 /* Modules */ = {
+		6106CB7A26F16F5400A041A5 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Modules;
-		};
-		61B23C5D266D200B00C00F23 /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 61B23C5C266D200B00C00F23 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = 6106CB7926F16F5400A041A5 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
 		};
-		61B23C60266D202000C00F23 /* Kingfisher */ = {
+		6106CB7D26F16F8200A041A5 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 61B23C5F266D202000C00F23 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 6106CB7C26F16F8200A041A5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		61B23C63266D204000C00F23 /* FirebaseAnalytics */ = {
+		6106CB8026F16FF100A041A5 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 61B23C62266D204000C00F23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 6106CB7F26F16FF100A041A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
