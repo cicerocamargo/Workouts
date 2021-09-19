@@ -1,6 +1,7 @@
 import Combine
 import Foundation
 import Moya
+import WorkoutsCore
 
 extension WorkoutsService {
     static let live = Self {

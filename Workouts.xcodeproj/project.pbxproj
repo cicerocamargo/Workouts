@@ -11,7 +11,7 @@
 		6106CB7B26F16F5400A041A5 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 6106CB7A26F16F5400A041A5 /* Moya */; };
 		6106CB7E26F16F8200A041A5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6106CB7D26F16F8200A041A5 /* Kingfisher */; };
 		6106CB8126F16FF100A041A5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6106CB8026F16FF100A041A5 /* FirebaseAnalytics */; };
-		613349AF26F73C00005C98F0 /* UIViewController+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613349AE26F73C00005C98F0 /* UIViewController+SwiftUI.swift */; };
+		613349B226F7496F005C98F0 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 613349B126F7496F005C98F0 /* Modules */; };
 		614E00A626F2C0A5005C4833 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E00A526F2C0A5005C4833 /* SubscriptionManager.swift */; };
 		61B23C1B266BEFF600C00F23 /* PaywallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C1A266BEFF600C00F23 /* PaywallViewModel.swift */; };
 		61B23C1D266BF17A00C00F23 /* PaywallTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23C1C266BF17A00C00F23 /* PaywallTrackingService.swift */; };
@@ -22,18 +22,16 @@
 		61FC74F825E3CB8D001E5B6F /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74E925E3CB8D001E5B6F /* WorkoutsView.swift */; };
 		61FC74F925E3CB8D001E5B6F /* WorkoutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74EA25E3CB8D001E5B6F /* WorkoutsViewModel.swift */; };
 		61FC74FA25E3CB8D001E5B6F /* WorkoutCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74EB25E3CB8D001E5B6F /* WorkoutCard.swift */; };
-		61FC74FB25E3CB8D001E5B6F /* WorkoutPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74ED25E3CB8D001E5B6F /* WorkoutPlayerViewController.swift */; };
 		61FC74FC25E3CB8D001E5B6F /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74EF25E3CB8D001E5B6F /* PaywallView.swift */; };
 		61FC74FD25E3CB8D001E5B6F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74F125E3CB8D001E5B6F /* RootView.swift */; };
 		61FC74FE25E3CB8D001E5B6F /* WorkoutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74F225E3CB8D001E5B6F /* WorkoutsApp.swift */; };
-		61FC74FF25E3CB8D001E5B6F /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74F425E3CB8D001E5B6F /* Workout.swift */; };
 		61FC750025E3CB8D001E5B6F /* WorkoutsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC74F525E3CB8D001E5B6F /* WorkoutsService.swift */; };
 		61FC750C25E3CCF6001E5B6F /* WorkoutsService+Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC750B25E3CCF6001E5B6F /* WorkoutsService+Live.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6106CB7726F167FA00A041A5 /* WorkoutDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetail.swift; sourceTree = "<group>"; };
-		613349AE26F73C00005C98F0 /* UIViewController+SwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SwiftUI.swift"; sourceTree = "<group>"; };
+		613349B026F74935005C98F0 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
 		614E00A526F2C0A5005C4833 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
 		61B23C1A266BEFF600C00F23 /* PaywallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallViewModel.swift; sourceTree = "<group>"; };
 		61B23C1C266BF17A00C00F23 /* PaywallTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallTrackingService.swift; sourceTree = "<group>"; };
@@ -46,11 +44,9 @@
 		61FC74E925E3CB8D001E5B6F /* WorkoutsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
 		61FC74EA25E3CB8D001E5B6F /* WorkoutsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsViewModel.swift; sourceTree = "<group>"; };
 		61FC74EB25E3CB8D001E5B6F /* WorkoutCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutCard.swift; sourceTree = "<group>"; };
-		61FC74ED25E3CB8D001E5B6F /* WorkoutPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutPlayerViewController.swift; sourceTree = "<group>"; };
 		61FC74EF25E3CB8D001E5B6F /* PaywallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		61FC74F125E3CB8D001E5B6F /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		61FC74F225E3CB8D001E5B6F /* WorkoutsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsApp.swift; sourceTree = "<group>"; };
-		61FC74F425E3CB8D001E5B6F /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		61FC74F525E3CB8D001E5B6F /* WorkoutsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsService.swift; sourceTree = "<group>"; };
 		61FC750B25E3CCF6001E5B6F /* WorkoutsService+Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutsService+Live.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				613349B226F7496F005C98F0 /* Modules in Frameworks */,
 				6106CB7E26F16F8200A041A5 /* Kingfisher in Frameworks */,
 				6106CB7B26F16F5400A041A5 /* Moya in Frameworks */,
 				6106CB8126F16FF100A041A5 /* FirebaseAnalytics in Frameworks */,
@@ -69,17 +66,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		613349AD26F73BEE005C98F0 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				613349AE26F73C00005C98F0 /* UIViewController+SwiftUI.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		61FC74C725E3CB6E001E5B6F = {
 			isa = PBXGroup;
 			children = (
+				613349B026F74935005C98F0 /* Modules */,
 				61FC74D225E3CB6E001E5B6F /* Workouts */,
 				61FC74D125E3CB6E001E5B6F /* Products */,
 				61FC750425E3CC31001E5B6F /* Frameworks */,
@@ -97,7 +87,6 @@
 		61FC74D225E3CB6E001E5B6F /* Workouts */ = {
 			isa = PBXGroup;
 			children = (
-				613349AD26F73BEE005C98F0 /* Extensions */,
 				61FC74F325E3CB8D001E5B6F /* Core */,
 				61FC74E425E3CB8D001E5B6F /* Features */,
 				61FC74F025E3CB8D001E5B6F /* Root */,
@@ -121,7 +110,6 @@
 			children = (
 				61FC74E525E3CB8D001E5B6F /* Profile */,
 				61FC74E725E3CB8D001E5B6F /* Workouts */,
-				61FC74EC25E3CB8D001E5B6F /* WorkoutPlayer */,
 				61FC74EE25E3CB8D001E5B6F /* Paywall */,
 			);
 			path = Features;
@@ -148,14 +136,6 @@
 			path = Workouts;
 			sourceTree = "<group>";
 		};
-		61FC74EC25E3CB8D001E5B6F /* WorkoutPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				61FC74ED25E3CB8D001E5B6F /* WorkoutPlayerViewController.swift */,
-			);
-			path = WorkoutPlayer;
-			sourceTree = "<group>";
-		};
 		61FC74EE25E3CB8D001E5B6F /* Paywall */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +159,6 @@
 		61FC74F325E3CB8D001E5B6F /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				61FC74F425E3CB8D001E5B6F /* Workout.swift */,
 				614E00A526F2C0A5005C4833 /* SubscriptionManager.swift */,
 			);
 			path = Core;
@@ -212,6 +191,7 @@
 				6106CB7A26F16F5400A041A5 /* Moya */,
 				6106CB7D26F16F8200A041A5 /* Kingfisher */,
 				6106CB8026F16FF100A041A5 /* FirebaseAnalytics */,
+				613349B126F7496F005C98F0 /* Modules */,
 			);
 			productName = Workouts;
 			productReference = 61FC74D025E3CB6E001E5B6F /* Workouts.app */;
@@ -275,14 +255,11 @@
 				61FC74FD25E3CB8D001E5B6F /* RootView.swift in Sources */,
 				61FC74FC25E3CB8D001E5B6F /* PaywallView.swift in Sources */,
 				61FC74F925E3CB8D001E5B6F /* WorkoutsViewModel.swift in Sources */,
-				61FC74FF25E3CB8D001E5B6F /* Workout.swift in Sources */,
-				613349AF26F73C00005C98F0 /* UIViewController+SwiftUI.swift in Sources */,
 				61FC750025E3CB8D001E5B6F /* WorkoutsService.swift in Sources */,
 				61FC74FA25E3CB8D001E5B6F /* WorkoutCard.swift in Sources */,
 				61B23C1B266BEFF600C00F23 /* PaywallViewModel.swift in Sources */,
 				61B23C1D266BF17A00C00F23 /* PaywallTrackingService.swift in Sources */,
 				61B23C22266BF91100C00F23 /* PaywallTrackingService+FirebaseAnalytics.swift in Sources */,
-				61FC74FB25E3CB8D001E5B6F /* WorkoutPlayerViewController.swift in Sources */,
 				614E00A626F2C0A5005C4833 /* SubscriptionManager.swift in Sources */,
 				6106CB7826F167FA00A041A5 /* WorkoutDetail.swift in Sources */,
 				61FC74F625E3CB8D001E5B6F /* ProfileView.swift in Sources */,
@@ -519,6 +496,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6106CB7F26F16FF100A041A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
+		};
+		613349B126F7496F005C98F0 /* Modules */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Modules;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

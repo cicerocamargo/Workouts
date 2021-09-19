@@ -1,6 +1,7 @@
 import Combine
 import Foundation
 import SwiftUI
+import WorkoutsCore
 
 final class WorkoutsViewModel: ObservableObject {
     struct State {

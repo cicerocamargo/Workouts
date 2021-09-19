@@ -1,5 +1,6 @@
 import Combine
 import Foundation
+import WorkoutsCore
 
 struct WorkoutsService {
     let loadWorkouts: () -> AnyPublisher<[Workout], Error>

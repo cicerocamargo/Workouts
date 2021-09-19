@@ -1,9 +1,10 @@
+import WorkoutsCore
 import UIKit
 
-final class WorkoutPlayerViewController: UIViewController {
+public final class WorkoutPlayerViewController: UIViewController {
     private let workout: Workout
 
-    init(workout: Workout) {
+    public init(workout: Workout) {
         self.workout = workout
         super.init(nibName: nil, bundle: nil)
     }
@@ -12,7 +13,7 @@ final class WorkoutPlayerViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Workout Player"

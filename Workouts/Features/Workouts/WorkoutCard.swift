@@ -1,6 +1,7 @@
 import Foundation
 import Kingfisher
 import SwiftUI
+import WorkoutsCore
 
 struct WorkoutCard: View {
     let workout: Workout

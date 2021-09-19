@@ -1,5 +1,6 @@
 import Combine
 import Foundation
+import WorkoutsCore
 
 final class PaywallViewModel: ObservableObject {
     private let sourceWorkout: Workout?

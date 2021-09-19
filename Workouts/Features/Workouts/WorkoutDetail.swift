@@ -1,5 +1,7 @@
 import SwiftUI
 import Kingfisher
+import WorkoutsCore
+import WorkoutPlayer
 
 struct WorkoutDetail: View {
     let workout: Workout
