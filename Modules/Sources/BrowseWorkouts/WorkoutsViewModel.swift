@@ -3,7 +3,7 @@ import Foundation
 import SwiftUI
 import WorkoutsCore
 
-final class WorkoutsViewModel: ObservableObject {
+public final class WorkoutsViewModel: ObservableObject {
     struct State {
         var isLoading = false
         var workouts: [Workout] = []
@@ -14,7 +14,7 @@ final class WorkoutsViewModel: ObservableObject {
     
     private let service: WorkoutsService
 
-    init(service: WorkoutsService) {
+    public init(service: WorkoutsService) {
         self.service = service
     }
     

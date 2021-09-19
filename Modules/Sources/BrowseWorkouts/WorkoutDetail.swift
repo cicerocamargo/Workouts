@@ -1,11 +1,13 @@
 import SwiftUI
 import Kingfisher
-import Payment
 import WorkoutsCore
-import WorkoutPlayer
 
-struct WorkoutDetail: View {
-    let workout: Workout
+public struct WorkoutDetail<PaywallView: View, WorkoutPlayerView: View>: View {
+    private let workout: Workout
+
+    private let makePaywallView: (_ didFinishPurchase: @escaping () -> Void) -> PaywallView
+
+    private let makeWorkoutPlayerView: (Workout) -> WorkoutPlayerView
 
     @State
     private var isShowingPaywall = false
@@ -13,7 +15,17 @@ struct WorkoutDetail: View {
     @State
     private var isShowingPlayer = false
 
-    var body: some View {
+    public init(
+        workout: Workout,
+        makePaywallView: @escaping (_ didFinishPurchase: @escaping () -> Void) -> PaywallView,
+        makeWorkoutPlayerView: @escaping (Workout) -> WorkoutPlayerView
+    ) {
+        self.workout = workout
+        self.makePaywallView = makePaywallView
+        self.makeWorkoutPlayerView = makeWorkoutPlayerView
+    }
+
+    public var body: some View {
         VStack(alignment: .leading) {
             Spacer()
             Text(workout.title.uppercased())
@@ -42,9 +54,13 @@ struct WorkoutDetail: View {
                     isShowingPlayer = true
                 }
             },
-            content: makePaywallView
+            content: {
+                makePaywallView { isShowingPaywall = false }
+            }
         )
-        .fullScreenCover(isPresented: $isShowingPlayer, content: makeWorkoutPlayer)
+        .fullScreenCover(isPresented: $isShowingPlayer) {
+            makeWorkoutPlayerView(workout)
+        }
     }
 
     private var background: some View {
@@ -69,31 +85,28 @@ struct WorkoutDetail: View {
             label: { Text("Start") }
         )
     }
-
-    private func makePaywallView() -> some View {
-        PaywallView(
-            viewModel: .init(
-                sourceWorkout: workout,
-                trackingService: FirebaseAnalyticsPaywallTrackingService(),
-                subscriptionManager: .shared,
-                didFinishPurchase: { _ in isShowingPaywall = false }
-            )
-        )
-    }
-
-    private func makeWorkoutPlayer() -> some View {
-        UINavigationController(
-            rootViewController: WorkoutPlayerViewController(workout: workout)
-        )
-        .asSwiftUIView
-        .edgesIgnoringSafeArea(.all)
-    }
 }
 
 struct WorkoutDetail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            WorkoutDetail(workout: .sample)
+            WorkoutDetail(
+                workout: .sample,
+                makePaywallView: { callback in
+                    VStack {
+                        Text("Paywall View Placeholder")
+                        Button(action: {
+                            SubscriptionManager.shared.isSubscriber = true
+                            callback()
+                        }) {
+                            Text("Complete Purchase")
+                        }
+                    }
+                },
+                makeWorkoutPlayerView: { workout in
+                    Text("Playing " + workout.title)
+                }
+            )
         }
     }
 }

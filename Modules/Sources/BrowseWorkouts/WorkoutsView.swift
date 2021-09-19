@@ -1,10 +1,21 @@
+import WorkoutsCore
 import SwiftUI
 
-struct WorkoutsView: View {
+public struct WorkoutsView<WorkoutDetail: View>: View {
     @ObservedObject
     var viewModel: WorkoutsViewModel
 
-    var body: some View {
+    let makeWorkoutDetail: (Workout) -> WorkoutDetail
+
+    public init(
+        viewModel: WorkoutsViewModel,
+        makeWorkoutDetail: @escaping (Workout) -> WorkoutDetail
+    ) {
+        self.viewModel = viewModel
+        self.makeWorkoutDetail = makeWorkoutDetail
+    }
+
+    public var body: some View {
         List {
             if viewModel.state.isLoading {
                 workoutsSection
@@ -32,7 +43,7 @@ struct WorkoutsView: View {
 
     private var detailNavLink: some View {
         NavigationLink(
-            destination: viewModel.state.selected.map(WorkoutDetail.init),
+            destination: viewModel.state.selected.map(makeWorkoutDetail),
             isActive: .init(
                 get: { viewModel.state.selected != nil },
                 set: { isActive in
@@ -57,7 +68,9 @@ struct WorkoutsView_Previews: PreviewProvider {
 
         var body: some View {
             NavigationView {
-                WorkoutsView(viewModel: viewModel)
+                WorkoutsView(viewModel: viewModel) { workout in
+                    Text(String(describing: workout))
+                }
             }
         }
     }

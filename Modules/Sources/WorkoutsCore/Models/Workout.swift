@@ -22,7 +22,7 @@ public extension Workout {
     static let sample = Self(
         title: "GANHE MÚSCULO SEM USAR PESOS",
         duration: "12 semanas",
-        imageURL: nil,
+        imageURL: URL(string: "https://assets.freeletics.com/training_plans/weights_free_gain/key_visual.jpg"),
         isRecommended: true
     )
 }

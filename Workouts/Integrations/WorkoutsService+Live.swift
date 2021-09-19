@@ -1,3 +1,4 @@
+import BrowseWorkouts
 import Combine
 import Foundation
 import Moya

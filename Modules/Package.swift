@@ -7,10 +7,15 @@ let package = Package(
     products: [
         .library(
             name: "Modules",
-            targets: ["WorkoutPlayer", "Payment", "Profile"]
+            targets: ["WorkoutPlayer", "Payment", "Profile", "BrowseWorkouts"]
         ),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(
+            url: "https://github.com/onevcat/Kingfisher.git",
+            from: "6.3.1"
+        )
+    ],
     targets: [
         .target(
             name: "WorkoutsCore",
@@ -42,6 +47,14 @@ let package = Package(
         .testTarget(
             name: "ProfileTests",
             dependencies: ["Profile"]
+        ),
+
+        .target(
+            name: "BrowseWorkouts",
+            dependencies: ["WorkoutsCore", "Kingfisher"]),
+        .testTarget(
+            name: "BrowseWorkoutsTests",
+            dependencies: ["BrowseWorkouts"]
         ),
     ]
 )

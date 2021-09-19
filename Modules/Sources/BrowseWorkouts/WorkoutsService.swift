@@ -2,8 +2,12 @@ import Combine
 import Foundation
 import WorkoutsCore
 
-struct WorkoutsService {
-    let loadWorkouts: () -> AnyPublisher<[Workout], Error>
+public struct WorkoutsService {
+    public let loadWorkouts: () -> AnyPublisher<[Workout], Error>
+
+    public init(loadWorkouts: @escaping () -> AnyPublisher<[Workout], Error>) {
+        self.loadWorkouts = loadWorkouts
+    }
 }
 
 #if DEBUG
