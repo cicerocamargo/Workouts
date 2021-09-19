@@ -1,5 +1,6 @@
 import SwiftUI
 import Kingfisher
+import Payment
 import WorkoutsCore
 import WorkoutPlayer
 
@@ -73,7 +74,7 @@ struct WorkoutDetail: View {
         PaywallView(
             viewModel: .init(
                 sourceWorkout: workout,
-                trackingService: .firebaseAnalytics,
+                trackingService: FirebaseAnalyticsPaywallTrackingService(),
                 subscriptionManager: .shared,
                 didFinishPurchase: { _ in isShowingPaywall = false }
             )

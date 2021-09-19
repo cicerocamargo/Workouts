@@ -2,7 +2,7 @@ import Combine
 import Foundation
 import WorkoutsCore
 
-final class PaywallViewModel: ObservableObject {
+public final class PaywallViewModel: ObservableObject {
     private let sourceWorkout: Workout?
     private let trackingService: PaywallTrackingService
     private let subscriptionManager: SubscriptionManager
@@ -10,7 +10,7 @@ final class PaywallViewModel: ObservableObject {
 
     @Published private(set) var isLoading = false
 
-    init(
+    public init(
         sourceWorkout: Workout?,
         trackingService: PaywallTrackingService,
         subscriptionManager: SubscriptionManager,
@@ -23,7 +23,7 @@ final class PaywallViewModel: ObservableObject {
     }
 
     func handleOnAppear() {
-        trackingService.trackView(sourceWorkout)
+        trackingService.trackView(workout: sourceWorkout)
     }
 
     func buyButtonTapped() {
@@ -39,7 +39,7 @@ final class PaywallViewModel: ObservableObject {
     private func finishSubscription() {
         isLoading = false
         subscriptionManager.isSubscriber = true
-        trackingService.trackPurchase(sourceWorkout)
+        trackingService.trackPurchase(workout: sourceWorkout)
         didFinishPurchase(sourceWorkout)
     }
 }

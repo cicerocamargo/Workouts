@@ -1,10 +1,10 @@
 import Foundation
 
-final class SubscriptionManager: ObservableObject {
-    static let shared = SubscriptionManager()
+public final class SubscriptionManager: ObservableObject {
+    public static let shared = SubscriptionManager()
 
     @Published
-    var isSubscriber: Bool {
+    public var isSubscriber: Bool {
         willSet {
             UserDefaults.standard.set(newValue, forKey: "isSubscriber")
         }

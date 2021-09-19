@@ -1,9 +1,14 @@
 import SwiftUI
 
-struct PaywallView: View {
-    @ObservedObject var viewModel: PaywallViewModel
+public struct PaywallView: View {
+    @ObservedObject
+    var viewModel: PaywallViewModel
 
-    var body: some View {
+    public init(viewModel: PaywallViewModel) {
+        self.viewModel = viewModel
+    }
+
+    public var body: some View {
         VStack {
             Text("Start your 7-day trial!").font(.largeTitle)
             Group {
@@ -42,7 +47,7 @@ struct PaywallView_Previews: PreviewProvider {
         PaywallView(
             viewModel: .init(
                 sourceWorkout: .sample,
-                trackingService: .dummy,
+                trackingService: DummyPaywallTrackingService(),
                 subscriptionManager: .shared,
                 didFinishPurchase: { _ in }
             )
