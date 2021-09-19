@@ -7,7 +7,7 @@ let package = Package(
     products: [
         .library(
             name: "Modules",
-            targets: ["WorkoutPlayer", "Payment"]
+            targets: ["WorkoutPlayer", "Payment", "Profile"]
         ),
     ],
     dependencies: [],
@@ -34,6 +34,14 @@ let package = Package(
         .testTarget(
             name: "PaymentTests",
             dependencies: ["Payment"]
+        ),
+
+        .target(
+            name: "Profile",
+            dependencies: ["WorkoutsCore"]),
+        .testTarget(
+            name: "ProfileTests",
+            dependencies: ["Profile"]
         ),
     ]
 )
